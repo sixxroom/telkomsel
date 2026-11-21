@@ -11,6 +11,10 @@ http://localhost/telkomsel/admin/
 Password admin awal: admin123. bisa diganti di config.php pada baris ADMIN_PASSWORD.
 
 ===========================================================================================================================================================
+database :
+http://localhost/phpmyadmin/index.php?route=/database/structure&db=telkomsel_db
+
+===========================================================================================================================================================
 
 next step :
 - merapihkan struktur file dan folder
