@@ -15,3 +15,11 @@ Password admin awal: admin123. bisa diganti di config.php pada baris ADMIN_PASSW
 next step :
 - merapihkan struktur file dan folder
 - menampilkan masa aktif untuk internet di halaman utama (main)
+
+===========================================================================================================================================================
+
+JANGAN LUPA DI PUSH SETIAP PERUBAHAN
+
+made by Riadh Raihan
+supported by https://claude.ai
+gihub : https://github.com/sixxroom
