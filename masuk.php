@@ -39,24 +39,25 @@ require 'includes/header.php';
 ?>
 <div class="auth-page">
   <div class="auth-box auth-<?= $type ?>">
-    <h2>Masuk ke akun <?= $label ?></h2>
-    <p class="sub">Cek kuota, nikmati fitur favorit, dan bayarkan pesanan terbaik</p>
+    <div class="auth-head">TELKOMSEL</div>
+    <div class="auth-body">
+      <h2>Masuk ke akun <?= $label ?></h2>
+      <p class="sub">Cek kuota, nikmati fitur favorit, dan bayarkan pesanan terbaik</p>
 
-    <?php if ($error): ?>
-      <div class="alert"><?= htmlspecialchars($error) ?></div>
-    <?php endif; ?>
+      <?php if ($error): ?>
+        <div class="alert"><?= htmlspecialchars($error) ?></div>
+      <?php endif; ?>
 
-    <form method="post">
-      <!-- Kolom nomor: pil merah tua, sesuai Figma -->
-      <input class="input-red" type="tel" name="phone" required
-             inputmode="numeric" autocomplete="tel"
-             placeholder="MASUKKAN NOMOR <?= $label ?>"
-             value="<?= htmlspecialchars($_POST['phone'] ?? '') ?>">
-      <!-- Tombol MASUK: outline, sesuai Figma -->
-      <button class="btn btn-outline" type="submit">MASUK</button>
-    </form>
+      <form method="post">
+        <input class="input-red" type="tel" name="phone" required
+               inputmode="numeric" autocomplete="tel"
+               placeholder="MASUKKAN NOMOR <?= $label ?>"
+               value="<?= htmlspecialchars($_POST['phone'] ?? '') ?>">
+        <button class="btn btn-outline" type="submit">MASUK</button>
+      </form>
 
-    <a class="back" href="login.php">&larr; Ganti jenis kartu</a>
+      <a class="back" href="login.php">&larr; Ganti jenis kartu</a>
+    </div>
   </div>
 </div>
 <?php require 'includes/footer.php'; ?>
